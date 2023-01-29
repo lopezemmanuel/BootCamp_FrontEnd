@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E0E0E0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+a:hover {
+    color: #7C7C7C;
+}
+
+li{
+    list-style: none;
+}
+
+.nav {
+    background-color: #FFFFFF;
+    padding: 1.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.nav-links li a {
+    font-size: 1.25em;
+    margin: 0 0.5em
+}
+
+.container {
+    max-width: 75%;
+    margin: 3em auto;
+}
+
+.main-titulo {
+    font-size: 2em;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto {
+    background-color: #FFFFFF;
+}
+
+.producto-img {
+    width: 100%;
+}
+
+.producto-info {
+    padding: 2em 0 1em 0;
+    text-align: center;
+}
+
+.producto-nombre {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.producto-precio {
+    margin: 0.5em;
+}
+
+.producto:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.footer p {
+    margin: 0.5em;
+}
