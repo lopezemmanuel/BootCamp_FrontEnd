@@ -32,18 +32,38 @@ li{
     padding: 1.5em;
     display: flex;
     width: 100%;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.25em;
+}
+
+h1 span {
+    font-size: 1.5em;
+    color: #FF8C00;
+}
+
+h1:hover span {
+    color: #a85d00;
+}
+
+.nav-links li{
+    margin: 1em 0em
 }
 
 .nav-links li a {
     font-size: 1.25em;
-    margin: 0 0.5em
+    margin: 0 1em
 }
 
 .container {
@@ -53,12 +73,19 @@ h1 {
 
 .main-titulo {
     font-size: 2em;
+    margin: 1em 0;
 }
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+@media screen and (min-width: 481px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -97,6 +124,63 @@ h1 {
     cursor: pointer;
 }
 
+.contacto-imagen {
+    display: none;
+    background-image: url('../img/10.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px){
+    .contacto-imagen {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-contacto {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.contacto-form {
+    background-color: #FFFFFF;
+    padding: 2em;
+}
+
+.contacto-input {
+    margin-bottom: 1em;
+}
+
+.contacto-input:last-child {
+    margin: 0;
+}
+
+.contacto-input label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contacto-input input {
+    width: 100%;
+    border: 1px solid #B4B4B4;
+    padding: 0.5em;
+}
+
+.contacto-input textarea {
+    width: 100%;
+    border: 1px solid #B4B4B4;
+    padding: 0.5em;
+    resize: none;
+}
+
+.contacto-input input.boton {
+    border: none;
+}
+
 .footer {
     background-color: #FFFFFF;
     font-size: 1.25em;
@@ -106,4 +190,21 @@ h1 {
 
 .footer p {
     margin: 0.5em;
+}
+
+.footer p:first-child {
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.25em;
+    border: none;
+}
+
+.boton:hover {
+    background-color: #e27c00;
 }
