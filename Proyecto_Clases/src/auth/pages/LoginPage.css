@@ -1,0 +1,154 @@
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    padding: 3rem 0;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 40%;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1 {
+    margin: 0;
+    margin-top: 1rem;
+    color: #444;
+}
+
+.info p {
+    margin: 0;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.ant-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    height: 100%;
+}
+
+.ant-card-body{
+    padding: 0!important;
+    margin: 3rem 0!important;
+    width: 80%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.form-group:nth-child(1) {
+    margin-top: 0;
+}
+
+.form-group:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.form-group .form-label {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.form-group .form-label i {
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border: 1px solid #AAA;
+    color: #666;
+}
+
+ul.ant-card-actions {
+    width: 80%;
+    border: none!important;
+}
+
+ul.ant-card-actions button {
+    border: none!important;
+    border-radius: 1rem!important;
+    -webkit-border-radius: 1rem!important;
+    -moz-border-radius: 1rem!important;
+    -ms-border-radius: 1rem!important;
+    -o-border-radius: 1rem!important;
+    background-color: #98b43c!important;
+    margin-bottom: 1rem;
+}
+
+ul.ant-card-actions button:hover {
+    background-color: #839b33!important;
+}
+
+ul.ant-card-actions button:nth-child(2) {
+    background-color: #4884f4!important;
+}
+
+ul.ant-card-actions button:nth-child(2):hover {
+    background-color: #3866bb!important;
+}
+
+ul.ant-card-actions li {
+    margin: 0!important;
+}
+
+.ant-card-actions button {
+    background: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
